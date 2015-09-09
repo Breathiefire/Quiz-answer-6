@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h2>Get a random dinner idea</h2>
+    <p>Click the randomize button below</p>
+    <form>
+      <input type="button" value="Randomize" onclick="getString()">
+    </form>
+    <script type="text/javascript">
+
+    var dinnerIdea = new Array("pizza", "burger", "fish and mashed potatos", "lasagna", "quesadilla", "soup");
+    function getString() {
+      var random = dinnerIdea[Math.floor(Math.random() * dinnerIdea.length)];
+      alert(random);
+    }
+    </script>
+  </body>
+</html>
